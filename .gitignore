@@ -1,0 +1,33 @@
+# Credenciales y configuración local
+.env
+
+# APKs
+apps/
+
+# Archivos Python compilados
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# pytest
+.pytest_cache/
+.hypothesis/
+
+# Allure
+allure-results/
+allure-report/
+
+# Entornos virtuales
+venv/
+.venv/
+env/
+
+# IDEs
+.idea/
+.vscode/
+*.iml
+
+# Kiro
+.kiro/
