@@ -28,6 +28,3 @@ env/
 .idea/
 .vscode/
 *.iml
-
-# Kiro
-.kiro/

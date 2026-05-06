@@ -65,14 +65,40 @@ proyecto/
 
 ## Prerrequisitos
 
-### Herramientas base
+### 1. Clonar el repositorio
 
 ```bash
-# Validar Python
-python --version
+git clone <url-del-repositorio>
+cd <nombre-del-proyecto>
+```
 
-# Instalar dependencias del proyecto
+### 2. Crear y activar entorno virtual Python
+
+```bash
+# Crear el entorno virtual
+python -m venv venv
+
+# Activar en Windows
+venv\Scripts\activate
+
+# Activar en Mac/Linux
+source venv/bin/activate
+```
+
+> Sabrás que está activo cuando el prompt muestre `(venv)` al inicio.
+
+### 3. Instalar dependencias del proyecto
+
+```bash
 pip install -r requirements.txt
+```
+
+### 4. Validar instalación
+
+```bash
+python --version
+pytest --version
+appium --version
 ```
 
 ### Appium (Node.js requerido)
@@ -134,6 +160,14 @@ SAUCE_ACCESS_KEY=tu_access_key
 ---
 
 ## Ejecución de pruebas
+
+> Asegúrate de tener el entorno virtual activado antes de correr cualquier comando:
+> ```bash
+> # Windows
+> venv\Scripts\activate
+> # Mac/Linux
+> source venv/bin/activate
+> ```
 
 ### Local
 
